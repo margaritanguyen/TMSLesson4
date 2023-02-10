@@ -343,9 +343,9 @@ namespace TMSLesson4
                 Console.Write($"{item} ");
             }
 
-            foreach (var item in arrayATSeven)
+            for (int r = 0; r < arrayLengthATSeven - 1; r++)
             {
-                for (int i = 0; i < arrayLengthATSeven - 1; i++)
+                for (int i = 0; i < arrayLengthATSeven - 1 - r; i++)
                 {
                     if (arrayATSeven[i] > arrayATSeven[i + 1])
                     {
@@ -364,7 +364,7 @@ namespace TMSLesson4
 
             Console.ReadLine();
 
-            ////accidentally
+            ////bubble sort from smallest to largest
             //int arrayLengthATEight = 9;
             //int[] arrayATEight = new int[arrayLengthATEight];
             //Random randATEight = new Random();
